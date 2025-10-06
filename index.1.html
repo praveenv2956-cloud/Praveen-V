@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Praveen.V — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Praveen V — Cybersecurity specialist. Ethical hacking, network security and digital forensics." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background: linear-gradient(180deg,#071323 0%, var(--bg) 60%);
+      color:#e6eef6;
+      line-height:1.45;
+      padding:32px;
+    }
+    .wrap{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:64px;height:64px;border-radius:12px;overflow:hidden;}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px;}
+    .brand h1{font-size:20px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-bottom:28px}
+    .hero-card{background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.6));padding:26px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(3,8,15,0.6);backdrop-filter:blur(6px)}
+    .hi{color:var(--accent);font-weight:700;letter-spacing:0.4px}
+    .lead{font-size:18px;margin-top:8px;color:#d7e6f5}
+    .cta{display:inline-block;margin-top:16px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021125;font-weight:700;text-decoration:none}
+    .stats{display:flex;gap:12px;margin-top:14px}
+    .stat{background:var(--glass);padding:10px;border-radius:10px;color:var(--muted);min-width:110px;text-align:center}
+    .stat b{display:block;color:#e6eef6;font-size:18px}
+    section{margin-bottom:26px}
+    h2{font-size:18px;margin-bottom:12px;color:#dff6fb}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+    .card p{color:var(--muted);font-size:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{padding:8px 10px;background:rgba(255,255,255,0.02);border-radius:999px;font-size:13px;color:var(--muted)}
+    .project{display:flex;gap:12px;align-items:center}
+    .thumb{width:76px;height:56px;background:linear-gradient(90deg,#071d2a, #092033);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .contact-form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:#e6eef6}
+    button{padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:#021125;font-weight:700}
+    footer{margin-top:40px;color:var(--muted);text-align:center;font-size:13px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){.grid{grid-template-columns:1fr}nav{display:none}.avatar{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <!-- Replace with your image file or link -->
+          <img src="praveen.1.jpg.jpg" alt="Praveen V">
+        </div>
+        <div>
+          <h1>Praveen.V</h1>
+          <div style="color:var(--muted);font-size:13px">Cybersecurity Specialist</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero-card hero">
+      <div class="hero-card">
+        <div class="hi">Hi, I'm Praveen 👋</div>
+        <div class="lead">I work in cybersecurity — ethical hacking, network security and digital forensics. I help organisations secure systems, find vulnerabilities and build resilient defenses.</div>
+        <a class="cta" href="#contact">Hire me</a>
+        <div class="stats">
+          <div class="stat"><b>No Im a student</b><span>Years experience</span></div>
+          <div class="stat"><b>1+</b><span>Projects</span></div>
+          <div class="stat"><b>Certs</b><span>In progress</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-card" style="display:flex;flex-direction:column;gap:12px">
+        <div style="height:220px;border-radius:12px;overflow:hidden;">
+          <!-- Profile picture displayed here too -->
+          <img src="praveen.1.jpg.jpg" alt="Profile Picture of Praveen" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+        </div>
+
+        <div class="card">
+          <strong>Contact</strong>
+          <p style="margin-top:8px;color:var(--muted)">Email: <span id="email">your.email@example.com</span><br>Location: India</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p id="bio">Praveen is a cybersecurity enthusiast focused on protecting systems and data. Replace this paragraph with a short bio describing your journey, areas of expertise, and future goals.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Primary Skills</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="chip">Ethical Hacking</span>
+          <span class="chip">Network Security</span>
+          <span class="chip">Vulnerability Assessment</span>
+          <span class="chip">Digital Forensics</span>
+          <span class="chip">Penetration Testing</span>
+          <span class="chip">Python Scripting</span>
+          <span class="chip">Security Audits</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Penetration Testing</strong>
+          <p>Simulated attacks to identify and prioritise vulnerabilities across web, network and infrastructure.</p>
+        </div>
+        <div class="card">
+          <strong>Security Audits</strong>
+          <p>Comprehensive assessments, policy reviews, and remediation planning to improve security posture.</p>
+        </div>
+        <div class="card">
+          <strong>Incident Response & Forensics</strong>
+          <p>Investigate breaches, preserve evidence and provide technical reports with mitigation steps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>Notable Projects</h2>
+      <div class="card">
+        <div class="project" style="margin-bottom:10px">
+          <div class="thumb">Proj 1</div>
+          <div>
+            <strong>Web App Penetration Test</strong>
+            <p class="muted">Performed a full black-box pen test for an e-commerce platform, identified critical issues and suggested remediation.</p>
+          </div>
+        </div>
+        <div class="project" style="margin-bottom:10px">
+          <div class="thumb">Proj 2</div>
+          <div>
+            <strong>Network Hardening Audit</strong>
+            <p class="muted">Assessed internal network, implemented firewall rules, and network segmentation for enhanced defense.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <form class="contact-form" onsubmit="sendMessage(event)">
+          <input id="name" placeholder="Praveen" required />
+          <input id="emailInput" placeholder="praveenv2956@gmail.com" type="gmail" required />
+          <textarea id="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+        <p id="status" style="margin-top:10px;color:var(--muted)"></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Praveen.V — Built with focus on security & simplicity.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function sendMessage(e){
+      e.preventDefault();
+      var name=document.getElementById('name').value;
+      document.getElementById('status').textContent='Thanks '+name+'! This is a demo form — connect it to your email API.';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
